@@ -1,0 +1,34 @@
+# ─── Base de datos ────────────────────────────────────────────────────────────
+# Datos persistentes de MySQL (se generan al levantar Docker)
+bookshelf-db-data/
+
+# ─── Laravel (backend) ────────────────────────────────────────────────────────
+backend/.env
+backend/vendor/
+backend/bootstrap/cache/*.php
+backend/storage/logs/*.log
+backend/storage/framework/cache/data/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+
+# ─── Next.js (frontend) ───────────────────────────────────────────────────────
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+# Ficheros de override locales de Compose
+docker-compose.override.yml
+
+# ─── Sistema operativo ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── IDEs y editores ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
