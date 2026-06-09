@@ -16,7 +16,8 @@ WORKDIR /app
 # Copia primero solo composer.json para aprovechar la caché de capas de Docker:
 # si no cambia composer.json, Docker reutiliza la capa del 'composer install'
 COPY composer.json ./
-RUN composer install --no-dev --no-interaction --no-scripts --prefer-dist
+RUN composer config policy.advisories.block false \
+    && composer install --no-dev --no-interaction --no-scripts --prefer-dist
 
 # Copia el resto del código fuente
 COPY . .
