@@ -19,7 +19,7 @@ services:
     environment:
       - APP_NAME=BookShelf
       - APP_ENV=local
-      - APP_KEY=base64:GdyfN3aV2MMto3pURnEBS6bbwDPumawD1pOJ/KLu4+4=
+      - APP_KEY
       - APP_DEBUG=false
       - APP_URL=http://localhost:8000
       - DB_CONNECTION=mysql
